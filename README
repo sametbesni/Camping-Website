@@ -1,0 +1,83 @@
+# Camping Website
+
+## English
+
+### Description
+This project is a simple camping website built using HTML5, CSS, and JavaScript. It includes a Node.js server and MongoDB for data storage. The website allows users to input and save data, and it can be accessed from different devices on the same network.
+
+### Features
+- User data input and storage
+- Responsive design for various devices
+- Node.js server with Express.js
+- MongoDB database integration
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/sametbesni/camping-website.git
+   cd camping-website
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run MongoDB using Docker:**
+   ```bash
+   docker run --name mongodb -d -p 27017:27017 mongo
+   ```
+
+4. **Start the server:**
+   ```bash
+   node server.js
+   ```
+
+5. **Access the website:**
+   Open your browser and go to `http://<your-local-ip>:3000`.
+
+### License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## Türkçe
+
+### Açıklama
+Bu proje, HTML5, CSS ve JavaScript kullanılarak oluşturulmuş basit bir kamp web sitesidir. Veri depolama için Node.js sunucusu ve MongoDB içerir. Web sitesi, kullanıcıların veri girmesine ve kaydetmesine olanak tanır ve aynı ağdaki farklı cihazlardan erişilebilir.
+
+### Özellikler
+- Kullanıcı veri girişi ve depolama
+- Çeşitli cihazlar için duyarlı tasarım
+- Express.js ile Node.js sunucusu
+- MongoDB veritabanı entegrasyonu
+
+### Kurulum
+
+1. **Depoyu klonlayın:**
+   ```bash
+   git clone https://github.com/sametbesni/camping-website.git
+   cd camping-website
+   ```
+
+2. **Bağımlılıkları yükleyin:**
+   ```bash
+   npm install
+   ```
+
+3. **Docker kullanarak MongoDB'yi çalıştırın:**
+   ```bash
+   docker run --name mongodb -d -p 27017:27017 mongo
+   ```
+
+4. **Sunucuyu başlatın:**
+   ```bash
+   node server.js
+   ```
+
+5. **Web sitesine erişin:**
+   Tarayıcınızı açın ve `http://<your-local-ip>:3000` adresine gidin.
+
+### Lisans
+Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için LICENSE dosyasına bakın.

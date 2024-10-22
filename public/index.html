@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Camping WebSite</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="camp-logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Campsites</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Equipment</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-icon" onclick="openNav()"><i class="ri-menu-5-fill"></i></div>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"><i class="ri-close-line"></i></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Campsites</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="hero">
+            <div class="hero-content">
+                <p>There's still time, Make your way out</p>
+                <h1>Create your own adventure</h1>
+                <div class="form-container">
+                    <select name="destination" id="destination">
+                        <option value="" disabled selected>Select Destination</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Turkiye">Turkiye</option>
+                        <option value="New Zealand">Nev Zealand</option>
+                        <option value="Mongolia">Mongolia</option>
+                        <option value="India">India</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Scotland">Scotland</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Costa Rice">Corta Rice</option>
+                        <option value="Alaska">Alaska</option>
+                    </select>
+                    <input type="date" name="check-in/check-out" id="date" placeholder="Check-in/Check-out">
+                    <input type="text" id="people" placeholder="Enter # of People">
+                    <button class="book-now" onclick="validateForm()">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal">
+            <div class="modal-content bg-success">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p>Booking Successful!</p>
+            </div>
+        </div>
+
+        <div class="card-content">
+            <div class="card-box">
+                <img src="images/img1.png" alt="card">
+                <h4>Equipment</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card-box">
+                <img src="images/img2.png" alt="card">
+                <h4>Equipment</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card-box">
+                <img src="images/img3.png" alt="card">
+                <h4>Equipment</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card-box">
+                <img src="images/img4.png" alt="card">
+                <h4>Equipment</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <footer>
+            
+        </footer>
+
+    </header>
+</body>
+<script src="script.js"></script>
+</html>
